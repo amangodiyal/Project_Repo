@@ -1,0 +1,38 @@
+<div class="row mt-5 ml-5">
+     <div class="col mt-5 ">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Price/Item (Rs)</th>
+                <th scope="col">Quantity</th>
+                </tr>
+            </thead>
+                <tbody>
+                 {{#each products}}   
+                    <tr>
+                    <th scope="row">#</th>
+                    <td>{{this.name}}</td>
+                    <td>{{this.price}}</td>
+                    <td>{{this.quantity}}</td>
+                    </tr>
+                 {{/each}}   
+                    <tr>
+                    <th scope="row"> </th>
+                    <td></td>
+                    <td ><b>Total Amount :</b></td>
+                    <td ><b>Rs {{amount}} only</b></td>           
+                    </tr>
+                    
+                    <tr>
+                    <th scope="row"> </th>
+                    <td></td>
+                    <td></td>
+                    <td class='btn btn-primary'><a href="/root/checkout" style='color:white'><b>Pay Now</b></a></td>
+                    </tr>
+                </tbody>
+        </table>
+     </div>
+ 
+ </div>

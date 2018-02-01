@@ -1,0 +1,45 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><img src="https://i.pinimg.com/originals/83/44/7a/83447ab05b955d75c266706054fd76ca.png"> <span class="mt-5">GlifKart</span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tokyoship_Home_icon.svg/1024px-Tokyoship_Home_icon.svg.png"> Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              
+              {{#if isAuthenticated}}
+                  <li class="nav-item">
+                    <a class="nav-link" href="/root/private">Add Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/root/cart"> 
+                     MyCart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                     
+                     <sup>{{quantity}}</sup>
+                     
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/root/logout">Logout</a>
+                  </li>
+                  
+
+               {{else}}
+                  <li class="nav-item">
+                      <a class="nav-link" href="/root/login">Login</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/root/signup">Signup</a>
+                  </li>
+
+              {{/if}}
+
+            </ul>
+          </div>
+        </div>
+      </nav>

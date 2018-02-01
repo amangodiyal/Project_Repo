@@ -1,0 +1,34 @@
+ <div class="row mt-5 ml-5">
+     <div class="col mt-2">
+        <p class="h3 clearfix mt-5 mb-4">
+            ADD PRODUCT
+        </p>
+     </div>
+ 
+ </div>
+    <div class="row mb-5 ml-5">
+    <div class="col-md-4 col-md-offset-4 mb-5">
+        <form method="POST" action="/api/products">
+            
+            <div class="form-group">
+                <label for="Product Name">Product Name</label>
+                <input type="text" class="form-control"  name="name" placeholder="Product Name">
+            </div>
+             <div class="form-group">
+                <label for="Manufacturer Name">Manufacturer</label>
+                <input type="text" class="form-control"  name="manufacturer" placeholder="Manufacturer">
+            </div>
+            <div class="form-group">
+                <label for="Price">Price</label>
+                <input type="text" class="form-control"  name="price" placeholder="Price">
+            </div>
+            <div class="form-group">
+                <label for="image">Image</label>
+                <input type="text" class="form-control"  name="image" placeholder="Image">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+        </form>
+    
+    </div>
+</div>
